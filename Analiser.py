@@ -115,33 +115,12 @@ def alfabeto(c):
 
 def main():
     com = 'profundidad = (9,8 * t^2) / 2'
-    if len(arg) > 1:
-        if '-oper' in arg:
-            i = arg.index('-oper')
-            if i < len(arg):
-                print(esOperador(arg[i+1]))
-            else:
-                print('Debe ingresar un valor despues del comando ',arg[i],'\n')
-                
-        if '-deli' in arg:
-            i = arg.index('-deli')
-            if i < len(arg):
-                print(esOperador(arg[i+1]))
-            else:
-                print('Debe ingresar un valor despues del comando ',arg[i],'\n')
-                
-        if '-comen' in arg:
-            i = arg.index('-comen')
-            if i < len(arg):
-                print(esOperador(arg[i+1]))
-            else:
-                print('Debe ingresar un valor despues del comando ',arg[i],'\n')
-
+    i=0
+    while i < len(com):
+        i+1
         
-    else:
-        print('Error introduca la cantidad de Argumentos necesarios')
-        print('Ejemplo: ', sys.argv[0],"hola mundo", 5)
-    
+        
+    print(9)
     
 if __name__ == '__main__':
     main()
